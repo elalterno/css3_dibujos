@@ -1,0 +1,47 @@
+/* codigo basaado de tutorial canal youtube midudev*/
+
+:root {
+    --main-bg-color: black;
+  }
+
+  body {
+    background-color: var(--main-bg-color);
+  }
+  
+
+div {
+    background-color: #B1060F;
+    height: 250px;
+    width: 60px;
+    position: relative;
+}
+
+div::before {
+    background-color: #B1060F;
+    height: 250px;
+    width: 60px;
+    position: absolute;
+    content:'';
+    left:90px;
+}
+
+div::after {
+    background-color: var(--main-bg-color);
+    height: 20px;
+    width: 175px;
+    position: absolute;
+    content:'';
+    left:-15px;
+    bottom: -10px;
+    border-radius: 50%;
+}
+
+span {
+    position: absolute;
+    height: 250px;
+    width: 60px;
+    background: #E50913;
+    left: 46px;
+    transform: skew(20deg);
+    box-shadow: 0 0 10px -4px #222222;
+}
