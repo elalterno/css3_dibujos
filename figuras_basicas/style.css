@@ -1,0 +1,228 @@
+/* figuras básicas para dibujar con css
+    basado en la página https://css-tricks.com/the-shapes-of-css/
+*/
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.cuadrado {
+    height: 100px;
+    width: 100px;
+    background: blue;
+}
+
+.rombo {
+    height: 80px;
+    width: 80px;
+    background: blue;
+    margin-top: 15px;
+    rotate: 45deg;
+}
+
+
+
+.rombo2 {
+    height: 60px;
+    width: 60px;
+    background: blue;
+    margin-top: 20px;
+    margin-left: 10px;
+    transform: rotate(45deg) skew(15deg, 15deg);
+}
+
+.rectangulo {
+    width: 150px;
+    height: 100px;
+    background: blue;
+}
+
+.circulo {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    border-radius: 50%
+  }
+
+.ovalo {
+    width: 200px;
+    height: 100px;
+    background : blue;
+    border-radius: 50% / 50%; /*   tambien podria ser 100px / 50px*/
+}
+
+.cuarto-circulo {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    border-radius: 0 100% 0 0;
+}
+
+.semi-circulo {
+    width: 100px;
+    height: 50px;
+    background: blue;
+    border-radius: 100px 100px 0 0;
+}
+
+.semi-circulo2 {
+    width: 50px;
+    height: 100px;
+    background: blue;
+    border-radius: 0 100px 100px 0;
+}
+
+.semi-circulo3 {
+        width: 100px;
+        height: 50px;
+        background: blue;
+        border-radius: 0 0 100px 100px;
+    }
+
+.semi-circulo4 {
+        width: 50px;
+        height: 100px;
+        background: blue;
+        border-radius: 100px  0 0 100px;
+    }
+
+.tunel {
+        width: 100px;
+        height: 100px;
+        background: blue;
+        border-radius: 100% 100% 0 0;
+    }
+
+.triangulo-arriba {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid blue;
+  }
+
+  .triangulo-abajo {
+    width: 0;
+    height: 0;
+    border-top: 100px solid blue;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+  }
+
+  .triangulo-izquierda {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 100px solid blue;
+    border-bottom: 50px solid transparent;
+  }
+
+  .triangulo-derecha {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid blue;
+    border-bottom: 50px solid transparent;
+  }
+
+  .triangulo-izquierda-arriba {
+    width: 0;
+    height: 0;
+    border-top: 100px solid blue;
+    border-right: 100px solid transparent;
+  }
+
+  .triangulo-izquierda-abajo {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid blue;
+    border-right: 100px solid transparent;
+  }
+
+  .triangulo-derecha-arriba {
+    width: 0;
+    height: 0;
+    border-top: 100px solid blue;
+    border-left: 100px solid transparent;
+  }
+
+  .triangulo-derecha-abajo {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid blue;
+    border-left: 100px solid transparent;
+  }
+
+
+.trapezoide {
+    border-bottom: 100px solid blue;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0px;
+    width: 100px;
+}
+
+.paralelogramo {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    transform: skew(20deg);
+}
+
+.luna{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: 10px 10px 0 0 blue;
+}
+
+.huevo {
+    width: 80px;
+    height: 110px;
+    background-color: blue;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.pastel {
+    width:0;
+    height:0;
+    border-right: 50px solid #d9534f;
+    border-top: 50px solid #428bca;
+    border-left: 50px solid #f0ad4e;
+    border-bottom: 50px solid #5cb85c;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.pacman {
+    width:0;
+    height:0;
+    border-right: 50px solid transparent;
+    border-top: 50px solid yellow;
+    border-left: 50px solid yellow;
+    border-bottom: 50px solid yellow;
+    border-radius: 100%;
+}
+
+.pizza {
+    width:0;
+    height:0;
+    border-right: 60px solid transparent;
+    border-top: 0px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 80px solid blue;
+    border-radius: 100%;
+}
+
+.cinta {
+    width: 0px;
+    height: 80px;
+    border-left: 50px solid blue;
+    border-right: 50px solid blue;
+    border-bottom: 35px solid transparent;
+}
